@@ -1,0 +1,788 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!doctype html>\
+<html lang="en">\
+<head>\
+  <meta charset="utf-8" />\
+  <meta name="viewport" content="width=device-width,initial-scale=1" />\
+  <meta name="description" content="Rock Gap Kinship, LLC \'97 Native philanthropy and evaluation support across Arizona." />\
+  <title>Rock Gap Kinship, LLC</title>\
+\
+  <!-- Fonts: readable + clean -->\
+  <link rel="preconnect" href="https://fonts.googleapis.com">\
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">\
+\
+  <style>\
+    :root\{\
+      /* Logo-complementary palette (warm desert + muted teal + charcoal + off-white) */\
+      --bg: #FAF7F1;\
+      --surface: #FFFFFF;\
+      --ink: #1F2328;\
+      --muted: #5A6470;\
+      --line: rgba(31,35,40,.12);\
+\
+      --clay: #C8743C;      /* warm clay */\
+      --sand: #E6C07A;      /* sandstone */\
+      --teal: #2F6B6B;      /* muted teal */\
+      --bronze: #8A6B3F;    /* subtle metallic accent */\
+\
+      --radius: 18px;\
+      --shadow: 0 10px 30px rgba(31,35,40,.08);\
+      --shadow2: 0 8px 20px rgba(31,35,40,.06);\
+      --max: 1120px;\
+      --col: 860px; /* centered text column width */\
+    \}\
+\
+    *\{ box-sizing:border-box; \}\
+    html\{ scroll-behavior:smooth; \}\
+    body\{\
+      margin:0;\
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;\
+      background: radial-gradient(1200px 600px at 70% -10%, rgba(47,107,107,.10), transparent 60%),\
+                  radial-gradient(900px 500px at 20% 10%, rgba(200,116,60,.12), transparent 55%),\
+                  var(--bg);\
+      color: var(--ink);\
+      line-height:1.5;\
+    \}\
+    a\{ color:inherit; text-decoration:none; \}\
+    img\{ max-width:100%; display:block; \}\
+\
+    /* Layout helpers */\
+    .wrap\{ max-width: var(--max); margin:0 auto; padding:0 20px; \}\
+    .col\{ max-width: var(--col); margin:0 auto; \}\
+    .section\{ padding:84px 0; \}\
+    .section.tight\{ padding:60px 0; \}\
+    .divider\{ height:1px; background:var(--line); margin:0; \}\
+\
+    /* Header / Nav */\
+    .header\{\
+      position:sticky; top:0; z-index:50;\
+      background: rgba(250,247,241,.78);\
+      backdrop-filter: blur(10px);\
+      border-bottom: 1px solid var(--line);\
+    \}\
+    .nav\{\
+      display:flex; align-items:center; justify-content:space-between;\
+      gap:16px; padding:14px 0;\
+    \}\
+    .brand\{\
+      display:flex; align-items:center; gap:12px; min-width:260px;\
+    \}\
+    .brand img\{\
+      width:44px; height:44px; border-radius:12px;\
+      background: var(--surface);\
+      box-shadow: var(--shadow2);\
+      object-fit:contain;\
+      padding:6px;\
+    \}\
+    .brand .name\{\
+      display:flex; flex-direction:column; gap:2px;\
+    \}\
+    .brand .name strong\{\
+      font-family: Fraunces, serif;\
+      letter-spacing:.2px;\
+      font-size:18px;\
+      line-height:1.1;\
+    \}\
+    .brand .name span\{\
+      color: var(--muted);\
+      font-size:13px;\
+    \}\
+\
+    .menu\{\
+      display:flex; align-items:center; gap:18px;\
+      flex-wrap:wrap; justify-content:flex-end;\
+    \}\
+    .menu a\{\
+      font-size:14px; color: var(--muted);\
+      padding:8px 10px; border-radius:12px;\
+    \}\
+    .menu a:hover\{ background: rgba(31,35,40,.05); color: var(--ink); \}\
+    .menu .cta\{\
+      display:flex; align-items:center; gap:10px;\
+      margin-left:6px;\
+    \}\
+\
+    /* Buttons */\
+    .btn\{\
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;\
+      border-radius: 999px;\
+      padding:12px 16px;\
+      font-weight:600;\
+      border:1px solid transparent;\
+      transition: transform .08s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;\
+      user-select:none;\
+      white-space:nowrap;\
+      font-size:14px;\
+    \}\
+    .btn:active\{ transform: translateY(1px); \}\
+    .btn.primary\{\
+      background: linear-gradient(135deg, var(--teal), #245a5a);\
+      color: #fff;\
+      box-shadow: 0 10px 18px rgba(47,107,107,.18);\
+    \}\
+    .btn.primary:hover\{ box-shadow: 0 14px 26px rgba(47,107,107,.22); \}\
+    .btn.secondary\{\
+      background: rgba(255,255,255,.65);\
+      border-color: var(--line);\
+      color: var(--ink);\
+      box-shadow: var(--shadow2);\
+    \}\
+    .btn.secondary:hover\{ background: #fff; border-color: rgba(31,35,40,.18); \}\
+    .btn.ghost\{\
+      background: transparent;\
+      border-color: rgba(31,35,40,.18);\
+      color: var(--ink);\
+    \}\
+    .chip\{\
+      display:inline-flex; align-items:center; gap:8px;\
+      padding:8px 12px;\
+      border-radius:999px;\
+      background: rgba(47,107,107,.10);\
+      border: 1px solid rgba(47,107,107,.18);\
+      color: var(--teal);\
+      font-weight:600;\
+      font-size:13px;\
+    \}\
+\
+    /* Hero */\
+    .hero\{\
+      padding:56px 0 26px;\
+    \}\
+    .hero-grid\{\
+      display:grid;\
+      grid-template-columns: 1.05fr .95fr;\
+      gap:28px;\
+      align-items:stretch;\
+    \}\
+    .hero-card\{\
+      background: rgba(255,255,255,.65);\
+      border: 1px solid var(--line);\
+      border-radius: var(--radius);\
+      box-shadow: var(--shadow);\
+      padding:28px;\
+      overflow:hidden;\
+    \}\
+    .hero h1\{\
+      font-family: Fraunces, serif;\
+      font-size:44px;\
+      line-height:1.05;\
+      margin:12px 0 12px;\
+      letter-spacing:.2px;\
+    \}\
+    .hero p\{\
+      color: var(--muted);\
+      font-size:16px;\
+      margin:0 0 18px;\
+      max-width: 54ch;\
+    \}\
+    .hero-actions\{ display:flex; gap:12px; flex-wrap:wrap; margin-top:16px; \}\
+    .hero-quick\{\
+      display:flex; gap:10px; flex-wrap:wrap;\
+      margin-top:20px;\
+    \}\
+    .hero-visual\{\
+      position:relative;\
+      border-radius: var(--radius);\
+      border: 1px solid var(--line);\
+      overflow:hidden;\
+      box-shadow: var(--shadow);\
+      min-height: 360px;\
+      background:\
+        linear-gradient(180deg, rgba(31,35,40,.12), rgba(31,35,40,.18)),\
+        url("assets/hero.jpg") center/cover no-repeat;\
+    \}\
+    .hero-visual .overlay\{\
+      position:absolute; inset:0;\
+      padding:22px;\
+      display:flex;\
+      flex-direction:column;\
+      justify-content:flex-end;\
+      gap:10px;\
+      color:#fff;\
+    \}\
+    .hero-visual .overlay strong\{\
+      font-size:14px;\
+      letter-spacing:.14em;\
+      text-transform:uppercase;\
+      opacity:.9;\
+    \}\
+    .hero-visual .overlay span\{\
+      font-size:14px;\
+      opacity:.9;\
+      max-width: 44ch;\
+    \}\
+\
+    /* Section headings */\
+    .kicker\{\
+      display:flex; align-items:center; gap:10px;\
+      color: var(--teal);\
+      font-weight:700;\
+      letter-spacing:.12em;\
+      text-transform:uppercase;\
+      font-size:12px;\
+      margin:0 0 10px;\
+    \}\
+    .title\{\
+      font-family: Fraunces, serif;\
+      font-size:32px;\
+      line-height:1.15;\
+      margin:0 0 10px;\
+    \}\
+    .subtitle\{\
+      color: var(--muted);\
+      font-size:16px;\
+      margin:0 0 26px;\
+      max-width: 70ch;\
+    \}\
+\
+    /* Cards / grids */\
+    .grid-2\{\
+      display:grid;\
+      grid-template-columns: repeat(2, minmax(0,1fr));\
+      gap:18px;\
+    \}\
+    .grid-3\{\
+      display:grid;\
+      grid-template-columns: repeat(3, minmax(0,1fr));\
+      gap:18px;\
+    \}\
+    .card\{\
+      background: rgba(255,255,255,.72);\
+      border:1px solid var(--line);\
+      border-radius: var(--radius);\
+      box-shadow: var(--shadow2);\
+      padding:20px;\
+    \}\
+    .card h3\{\
+      margin:0 0 8px;\
+      font-size:16px;\
+    \}\
+    .card p\{\
+      margin:0 0 14px;\
+      color: var(--muted);\
+      font-size:14px;\
+    \}\
+    .icon\{\
+      width:38px; height:38px; border-radius:14px;\
+      display:inline-flex; align-items:center; justify-content:center;\
+      margin-bottom:12px;\
+      background: rgba(200,116,60,.12);\
+      border: 1px solid rgba(200,116,60,.18);\
+      color: var(--clay);\
+      font-weight:800;\
+    \}\
+    .card .link\{\
+      display:inline-flex; align-items:center; gap:8px;\
+      color: var(--teal);\
+      font-weight:700;\
+      font-size:14px;\
+    \}\
+\
+    /* Process */\
+    .steps\{\
+      display:grid;\
+      grid-template-columns: repeat(2, minmax(0,1fr));\
+      gap:14px;\
+      margin-top:12px;\
+    \}\
+    .step\{\
+      display:flex; gap:12px;\
+      padding:14px;\
+      border-radius: 16px;\
+      border: 1px solid var(--line);\
+      background: rgba(255,255,255,.66);\
+    \}\
+    .num\{\
+      flex:0 0 auto;\
+      width:34px; height:34px;\
+      border-radius: 12px;\
+      background: rgba(47,107,107,.12);\
+      border:1px solid rgba(47,107,107,.20);\
+      color: var(--teal);\
+      display:flex; align-items:center; justify-content:center;\
+      font-weight:800;\
+    \}\
+    .step strong\{ display:block; margin-top:1px; font-size:14px; \}\
+    .step span\{ display:block; color: var(--muted); font-size:13px; margin-top:2px; \}\
+\
+    /* Team */\
+    .team\{\
+      display:grid;\
+      grid-template-columns: repeat(2, minmax(0,1fr));\
+      gap:18px;\
+      align-items:stretch;\
+    \}\
+    .person\{\
+      display:grid;\
+      grid-template-columns: 110px 1fr;\
+      gap:16px;\
+      align-items:start;\
+    \}\
+    .avatar\{\
+      width:110px; height:110px;\
+      border-radius: 22px;\
+      border:1px solid var(--line);\
+      box-shadow: var(--shadow2);\
+      overflow:hidden;\
+      background: #fff;\
+    \}\
+    .avatar img\{ width:100%; height:100%; object-fit:cover; \}\
+    .person h3\{ margin:0 0 6px; font-size:18px; \}\
+    .person .role\{ color: var(--teal); font-weight:700; font-size:13px; margin-bottom:8px; \}\
+    .person p\{ margin:0; color: var(--muted); font-size:14px; \}\
+\
+    /* Contact */\
+    .contact-grid\{\
+      display:grid;\
+      grid-template-columns: 1fr 1fr;\
+      gap:18px;\
+      align-items:start;\
+    \}\
+    .contact-box\{\
+      background: rgba(255,255,255,.72);\
+      border:1px solid var(--line);\
+      border-radius: var(--radius);\
+      box-shadow: var(--shadow2);\
+      padding:20px;\
+    \}\
+    label\{ display:block; font-size:13px; color: var(--muted); margin:10px 0 6px; \}\
+    input, textarea\{\
+      width:100%;\
+      padding:12px 12px;\
+      border-radius: 14px;\
+      border:1px solid rgba(31,35,40,.18);\
+      background:#fff;\
+      font: inherit;\
+      font-size:14px;\
+      outline:none;\
+    \}\
+    input:focus, textarea:focus\{ border-color: rgba(47,107,107,.45); box-shadow: 0 0 0 4px rgba(47,107,107,.10); \}\
+    textarea\{ min-height: 140px; resize: vertical; \}\
+    .hint\{ color: var(--muted); font-size:13px; margin:10px 0 0; \}\
+    .inline\{\
+      display:flex; gap:10px; flex-wrap:wrap;\
+      margin-top:12px;\
+    \}\
+\
+    /* Footer */\
+    footer\{\
+      padding:32px 0 44px;\
+      color: var(--muted);\
+      font-size:13px;\
+    \}\
+    .foot\{\
+      display:flex; gap:14px; flex-wrap:wrap; justify-content:space-between; align-items:center;\
+      border-top: 1px solid var(--line);\
+      padding-top:18px;\
+    \}\
+    .small-links\{ display:flex; gap:14px; flex-wrap:wrap; \}\
+    .small-links a\{ color: var(--muted); \}\
+    .small-links a:hover\{ color: var(--ink); \}\
+\
+    /* Responsive */\
+    @media (max-width: 980px)\{\
+      .hero-grid\{ grid-template-columns:1fr; \}\
+      .hero-visual\{ min-height: 300px; \}\
+      .grid-3\{ grid-template-columns:1fr; \}\
+      .grid-2\{ grid-template-columns:1fr; \}\
+      .steps\{ grid-template-columns:1fr; \}\
+      .team\{ grid-template-columns:1fr; \}\
+      .contact-grid\{ grid-template-columns:1fr; \}\
+      .brand\{ min-width:auto; \}\
+      .menu\{ gap:8px; \}\
+      .hero h1\{ font-size:38px; \}\
+    \}\
+  </style>\
+</head>\
+\
+<body>\
+  <!-- Sticky header -->\
+  <header class="header">\
+    <div class="wrap">\
+      <nav class="nav">\
+        <a class="brand" href="#top" aria-label="Rock Gap Kinship Home">\
+          <img src="assets/rgk-logo.png" alt="Rock Gap Kinship logo" />\
+          <div class="name">\
+            <strong>Rock Gap Kinship, LLC</strong>\
+            <span>Arizona \'95 Native Philanthropy \'95 Evaluations</span>\
+          </div>\
+        </a>\
+\
+        <div class="menu" aria-label="Primary navigation">\
+          <a href="#native">Native Philanthropy</a>\
+          <a href="#evaluations">Evaluations</a>\
+          <a href="#about">About</a>\
+          <a href="#team">Team</a>\
+          <a href="#contact">Contact</a>\
+\
+          <div class="cta">\
+            <a class="btn secondary" href="tel:16027020311" aria-label="Call Rock Gap Kinship">Call</a>\
+            <a class="btn primary" href="#contact">Contact Us</a>\
+          </div>\
+        </div>\
+      </nav>\
+    </div>\
+  </header>\
+\
+  <!-- Hero -->\
+  <main id="top">\
+    <section class="hero">\
+      <div class="wrap hero-grid">\
+        <div class="hero-card">\
+          <div class="chip">Relationship-centered \'95 Arizona</div>\
+          <h1>Grounded support for Native philanthropy and evaluation work.</h1>\
+          <p>\
+            Rock Gap Kinship partners with funders, Tribal communities, and organizations to support work that is respectful,\
+            community-aligned, and actionable.\
+          </p>\
+\
+          <div class="hero-actions">\
+            <a class="btn primary" href="#contact">Contact Us</a>\
+            <a class="btn secondary" href="tel:16027020311">Call 602-702-0311</a>\
+          </div>\
+\
+          <!-- Multiple pathways -->\
+          <div class="hero-quick" aria-label="Quick links">\
+            <a class="btn ghost" href="#native">Native Philanthropy</a>\
+            <a class="btn ghost" href="#evaluations">Evaluations</a>\
+            <a class="btn ghost" href="#team">Meet the Team</a>\
+          </div>\
+\
+          <p class="hint">\
+            Email: <a href="mailto:Info@RockGapKinship.com"><strong>Info@RockGapKinship.com</strong></a>\
+          </p>\
+        </div>\
+\
+        <aside class="hero-visual" role="img" aria-label="Rock Gap Kinship hero image">\
+          <div class="overlay">\
+            <strong>Our Focus</strong>\
+            <span>Two clear lanes: Native philanthropy (Serena-led) and evaluations (Serena + Cindy).</span>\
+          </div>\
+        </aside>\
+      </div>\
+    </section>\
+\
+    <hr class="divider" />\
+\
+    <!-- Two lane cards -->\
+    <section class="section tight">\
+      <div class="wrap">\
+        <div class="col">\
+          <p class="kicker">What we do</p>\
+          <h2 class="title">Two ways we support the work</h2>\
+          <p class="subtitle">\
+            We keep the site easy to navigate: you can use the top tabs, these buttons, or scroll to the sections below.\
+          </p>\
+        </div>\
+\
+        <div class="grid-2">\
+          <div class="card">\
+            <div class="icon">NP</div>\
+            <h3>Native Philanthropy (Serena-led)</h3>\
+            <p>\
+              Community-aligned investment development, relationship building, and opportunity maturation\'97so resources move with clarity and care.\
+            </p>\
+            <a class="link" href="#native">Explore Native Philanthropy \uc0\u8594 </a>\
+          </div>\
+\
+          <div class="card">\
+            <div class="icon">EV</div>\
+            <h3>Evaluations (Serena + Cindy)</h3>\
+            <p>\
+              Culturally responsive evaluation support that leads to clear next steps\'97helping teams understand what\'92s working and what needs strengthening.\
+            </p>\
+            <a class="link" href="#evaluations">Explore Evaluations \uc0\u8594 </a>\
+          </div>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <!-- About -->\
+    <section id="about" class="section">\
+      <div class="wrap">\
+        <div class="col">\
+          <p class="kicker">About</p>\
+          <h2 class="title">Who we are</h2>\
+          <p class="subtitle">\
+            <!-- Placeholder that you can tighten with exact brochure wording -->\
+            Rock Gap Kinship is a team of compassionate social workers dedicated to building relationships and supporting communities with heart and empathy.\
+            We counter harmful stereotypes by uplifting racialized and marginalized communities and supporting community-driven initiatives.\
+          </p>\
+        </div>\
+\
+        <div class="grid-3">\
+          <div class="card">\
+            <div class="icon">01</div>\
+            <h3>Community-rooted</h3>\
+            <p>We prioritize trust, context, and relationship\'97so work reflects lived realities, not assumptions.</p>\
+          </div>\
+          <div class="card">\
+            <div class="icon">02</div>\
+            <h3>Culturally responsive</h3>\
+            <p>We approach engagement and learning with respect for sovereignty, identity, and community priorities.</p>\
+          </div>\
+          <div class="card">\
+            <div class="icon">03</div>\
+            <h3>Clear + actionable</h3>\
+            <p>We translate insight into decisions and next steps. No jargon. No \'93report for the shelf.\'94</p>\
+          </div>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <hr class="divider" />\
+\
+    <!-- Native Philanthropy -->\
+    <section id="native" class="section">\
+      <div class="wrap">\
+        <div class="col">\
+          <p class="kicker">Native Philanthropy</p>\
+          <h2 class="title">The 7-step community investment pipeline</h2>\
+          <p class="subtitle">\
+            Serena-led philanthropic engagement designed to support community-aligned investment opportunities across Arizona.\
+            We build relationships, identify and strengthen opportunities, and provide clear recommendations for decision-making.\
+          </p>\
+          <div class="inline">\
+            <a class="btn primary" href="#contact">Start a conversation</a>\
+            <a class="btn secondary" href="tel:16027020311">Call 602-702-0311</a>\
+          </div>\
+        </div>\
+\
+        <div class="steps">\
+          <div class="step"><div class="num">1</div><div><strong>Research</strong><span>Landscape review to understand context, priorities, and alignment.</span></div></div>\
+          <div class="step"><div class="num">2</div><div><strong>Identify &amp; Vet</strong><span>Identify initiatives and partners; vet for fit, readiness, and credibility.</span></div></div>\
+          <div class="step"><div class="num">3</div><div><strong>Initiate Relationships</strong><span>Warm introductions, listening sessions, and early trust-building.</span></div></div>\
+          <div class="step"><div class="num">4</div><div><strong>Co-Design + Build Capacity</strong><span>Support partners in shaping fundable, community-aligned opportunities.</span></div></div>\
+          <div class="step"><div class="num">5</div><div><strong>Coordinate Visits</strong><span>Prepare site visits and meetings with clear agendas and briefings.</span></div></div>\
+          <div class="step"><div class="num">6</div><div><strong>Technical Assistance</strong><span>Hands-on support to strengthen opportunities and next steps.</span></div></div>\
+          <div class="step"><div class="num">7</div><div><strong>Summary + Recommendation</strong><span>Concise summaries and recommendations to support decisions.</span></div></div>\
+          <div class="step"><div class="num">\uc0\u10003 </div><div><strong>Outputs</strong><span>Opportunity briefs, site visit prep/recaps, and recommendation memos.</span></div></div>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <hr class="divider" />\
+\
+    <!-- Evaluations -->\
+    <section id="evaluations" class="section">\
+      <div class="wrap">\
+        <div class="col">\
+          <p class="kicker">Evaluations</p>\
+          <h2 class="title">Evaluations that lead to clear next steps</h2>\
+          <p class="subtitle">\
+            Rock Gap Kinship provides culturally responsive evaluation support for organizations across Arizona\'97helping you understand what\'92s working,\
+            what needs strengthening, and what to do next.\
+          </p>\
+        </div>\
+\
+        <div class="grid-3">\
+          <div class="card">\
+            <div class="icon">ED</div>\
+            <h3>Evaluation design + strategy</h3>\
+            <p>Scope, key questions, approach, timeline, and roles aligned to community and funder needs.</p>\
+          </div>\
+          <div class="card">\
+            <div class="icon">DC</div>\
+            <h3>Data collection</h3>\
+            <p>Interviews, focus groups, listening sessions, surveys, and document/program artifact review.</p>\
+          </div>\
+          <div class="card">\
+            <div class="icon">AI</div>\
+            <h3>Analysis + insights</h3>\
+            <p>Qualitative themes and quantitative summaries that are grounded, defensible, and decision-useful.</p>\
+          </div>\
+          <div class="card">\
+            <div class="icon">RC</div>\
+            <h3>Reporting + communication</h3>\
+            <p>Funder-facing reports, community-facing summaries, and slide decks for leadership/boards.</p>\
+          </div>\
+          <div class="card">\
+            <div class="icon">FL</div>\
+            <h3>Facilitation + learning</h3>\
+            <p>Sense-making sessions that strengthen recommendations and build shared understanding.</p>\
+          </div>\
+          <div class="card">\
+            <div class="icon">IS</div>\
+            <h3>Implementation support</h3>\
+            <p>Improvement planning, outcome tracking guidance, and lightweight measurement systems.</p>\
+          </div>\
+        </div>\
+\
+        <div class="col" style="margin-top:34px;">\
+          <h3 style="margin:0 0 10px; font-size:18px;">Our 5-step evaluation process</h3>\
+          <div class="steps">\
+            <div class="step"><div class="num">1</div><div><strong>Discover</strong><span>Learn context, goals, priorities, and decision needs.</span></div></div>\
+            <div class="step"><div class="num">2</div><div><strong>Design</strong><span>Define questions, methods, scope, timeline, and success markers.</span></div></div>\
+            <div class="step"><div class="num">3</div><div><strong>Collect</strong><span>Interviews, focus groups/listening sessions, surveys, and document review.</span></div></div>\
+            <div class="step"><div class="num">4</div><div><strong>Analyze</strong><span>Identify patterns and key metrics; translate into clear takeaways.</span></div></div>\
+            <div class="step"><div class="num">5</div><div><strong>Report + Act</strong><span>Deliver report/deck and align on recommendations + next steps.</span></div></div>\
+            <div class="step"><div class="num">\uc0\u10003 </div><div><strong>Deliverables</strong><span>Evaluation plan (if needed), findings summary, recommendations, final report/deck.</span></div></div>\
+          </div>\
+\
+          <div class="inline">\
+            <a class="btn primary" href="#contact">Request an evaluation consult</a>\
+            <a class="btn secondary" href="mailto:Info@RockGapKinship.com">Email us</a>\
+          </div>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <hr class="divider" />\
+\
+    <!-- Team -->\
+    <section id="team" class="section">\
+      <div class="wrap">\
+        <div class="col">\
+          <p class="kicker">Team</p>\
+          <h2 class="title">Meet the team</h2>\
+          <p class="subtitle">\
+            Two experienced social workers bringing grounded facilitation, deep listening, and community accountability to every engagement.\
+            (We can expand bios here once you approve what\'92s public.)\
+          </p>\
+        </div>\
+\
+        <div class="team">\
+          <div class="card person">\
+            <div class="avatar">\
+              <img src="assets/serena.jpg" alt="Photo of Serena Denetsosie" />\
+            </div>\
+            <div>\
+              <h3>Serena Denetsosie, MSW</h3>\
+              <div class="role">Native Philanthropy \'95 Community Engagement</div>\
+              <p>\
+                <!-- Placeholder bio; swap with brochure text verbatim if you want -->\
+                Serena leads Native philanthropy engagements rooted in relationship, community context, and trust-based practice across Arizona.\
+              </p>\
+            </div>\
+          </div>\
+\
+          <div class="card person">\
+            <div class="avatar">\
+              <img src="assets/cindy.jpg" alt="Photo of Cindy Mackey" />\
+            </div>\
+            <div>\
+              <h3>Cindy Mackey, MSW</h3>\
+              <div class="role">Evaluations \'95 Facilitation \'95 Learning</div>\
+              <p>\
+                <!-- Placeholder bio; swap with brochure text verbatim if you want -->\
+                Cindy supports evaluation and learning work with a restorative, inclusive approach that centers clarity and practical next steps.\
+              </p>\
+            </div>\
+          </div>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <hr class="divider" />\
+\
+    <!-- Contact -->\
+    <section id="contact" class="section">\
+      <div class="wrap">\
+        <div class="col">\
+          <p class="kicker">Contact</p>\
+          <h2 class="title">Contact us</h2>\
+          <p class="subtitle">\
+            Send a message and we\'92ll follow up. You can also email or call directly.\
+          </p>\
+        </div>\
+\
+        <div class="contact-grid">\
+          <div class="contact-box">\
+            <h3 style="margin:0 0 8px;">Send a message</h3>\
+            <p style="margin:0 0 14px; color:var(--muted); font-size:14px;">\
+              This form is ready to wire into your WordPress form plugin (WPForms/Fluent Forms/Gravity Forms).\
+              For static hosting, it can post to Formspree or your backend.\
+            </p>\
+\
+            <!-- Static HTML form (placeholder action). Replace with your WordPress form embed OR a service endpoint. -->\
+            <form action="#" method="post" onsubmit="return showThanks(event);">\
+              <label for="name">Name</label>\
+              <input id="name" name="name" type="text" autocomplete="name" required />\
+\
+              <label for="org">Organization (optional)</label>\
+              <input id="org" name="organization" type="text" autocomplete="organization" />\
+\
+              <label for="email">Email</label>\
+              <input id="email" name="email" type="email" autocomplete="email" required />\
+\
+              <label for="phone">Phone number</label>\
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required />\
+\
+              <label for="message">Message</label>\
+              <textarea id="message" name="message" required></textarea>\
+\
+              <div class="inline">\
+                <button class="btn primary" type="submit">Send message</button>\
+                <a class="btn secondary" href="mailto:Info@RockGapKinship.com">Email instead</a>\
+              </div>\
+\
+              <p id="thanks" class="hint" style="display:none; margin-top:12px;">\
+                Thanks \'97 your message is ready to be wired to email delivery. Replace this form with your WordPress form embed to go live.\
+              </p>\
+            </form>\
+          </div>\
+\
+          <div class="contact-box">\
+            <h3 style="margin:0 0 8px;">Direct contact</h3>\
+            <p style="margin:0; color:var(--muted); font-size:14px;">\
+              <strong>Email:</strong> <a href="mailto:Info@RockGapKinship.com">Info@RockGapKinship.com</a><br/>\
+              <strong>Phone:</strong> <a href="tel:16027020311">602-702-0311</a><br/>\
+              <strong>Geography:</strong> Arizona (statewide)\
+            </p>\
+\
+            <div style="margin-top:18px; padding:14px; border-radius:16px; border:1px solid var(--line); background:rgba(200,116,60,.08);">\
+              <strong style="display:block; margin-bottom:6px;">Placeholder: office / mailing</strong>\
+              <span style="color:var(--muted); font-size:13px;">\
+                Add a mailing address here if you want it public. Otherwise, we\'92ll keep the site email/phone only.\
+              </span>\
+            </div>\
+\
+            <div class="inline" style="margin-top:16px;">\
+              <a class="btn primary" href="tel:16027020311">Call now</a>\
+              <a class="btn secondary" href="#native">Native Philanthropy</a>\
+            </div>\
+          </div>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <footer>\
+      <div class="wrap foot">\
+        <div>\
+          <strong style="color:var(--ink);">Rock Gap Kinship, LLC</strong><br/>\
+          <span>\'a9 <span id="year"></span> \'95 Arizona</span>\
+        </div>\
+        <div class="small-links">\
+          <a href="#top">Top</a>\
+          <a href="#native">Native Philanthropy</a>\
+          <a href="#evaluations">Evaluations</a>\
+          <a href="#contact">Contact</a>\
+        </div>\
+      </div>\
+    </footer>\
+  </main>\
+\
+  <script>\
+    // Minor polish\
+    document.getElementById('year').textContent = new Date().getFullYear();\
+\
+    function showThanks(e)\{\
+      e.preventDefault();\
+      const el = document.getElementById('thanks');\
+      if(el) el.style.display = 'block';\
+      // This is a static demo form. For a live site:\
+      // - embed a WordPress form plugin\
+      // - OR set form action to your endpoint / Formspree\
+      return false;\
+    \}\
+  </script>\
+</body>\
+</html>\
+}
